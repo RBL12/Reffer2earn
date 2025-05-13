@@ -1,0 +1,171 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern Font */
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding around content */
+    background-color: #f4f7f6; /* Light background */
+    color: #333;
+    display: flex; /* Center content vertically if needed */
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Minimum height of viewport */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Max width for large screens */
+    margin: 20px auto; /* Center container and add top/bottom margin */
+    background: #fff; /* White background for content area */
+    padding: 30px; /* More padding inside container */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Header and Headings */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #007bff; /* Separator line */
+}
+
+h1 {
+    color: #007bff; /* Primary blue color */
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Introduction Section */
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro p {
+    margin-bottom: 15px;
+}
+
+.intro ul {
+     list-style: disc; /* Add back bullets for intro list */
+     padding-left: 20px;
+}
+
+.intro li {
+    background: none; /* Remove background from intro list */
+    margin-bottom: 5px;
+    padding: 0;
+    border: none;
+    font-weight: bold;
+}
+
+
+/* Offers List */
+.offers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offers li {
+    background: #eef2f7; /* Light blue background for offer items */
+    margin-bottom: 20px; /* Space between items */
+    padding: 20px; /* Padding inside items */
+    border-radius: 8px;
+    border-left: 6px solid #007bff; /* Stronger left border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for items */
+}
+
+.offers li h3 {
+    margin-top: 0;
+    color: #0056b3; /* Darker blue for item titles */
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.offers li p {
+    margin-bottom: 10px;
+}
+
+.offers li p:last-child {
+    margin-bottom: 0; /* No bottom margin for the last paragraph */
+}
+
+
+/* Buttons and Links */
+.btn-link, .btn-whatsapp {
+    display: inline-block; /* Allow padding and margin */
+    background-color: #007bff; /* Blue button */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded buttons */
+    text-decoration: none; /* No underline */
+    font-weight: 600; /* Semi-bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 5px; /* Space above button */
+}
+
+.btn-link:hover, .btn-whatsapp:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.btn-whatsapp {
+    background-color: #25D366; /* WhatsApp Green */
+}
+
+.btn-whatsapp:hover {
+     background-color: #1DA851; /* Darker Green */
+}
+
+/* Invitation Code Styling */
+li strong {
+    color: #555; /* Slightly darker text for code */
+}
+
+/* WhatsApp Section Styling */
+.whatsapp-section {
+     text-align: center;
+     margin-top: 30px;
+     padding-top: 20px;
+     border-top: 1px dashed #ccc; /* Dashed line separator */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px; /* More space above footer */
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em; /* Smaller font */
+    color: #777; /* Lighter text */
+}
+
+/* Responsive adjustments (simple) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on small screens */
+    }
+    .container {
+        padding: 20px; /* Less padding inside container on small screens */
+    }
+    h1 {
+        font-size: 1.8em; /* Smaller heading on small screens */
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+     .btn-link, .btn-whatsapp {
+        display: block; /* Make buttons full width on small screens */
+        text-align: center;
+        margin-bottom: 10px;
+     }
+}
